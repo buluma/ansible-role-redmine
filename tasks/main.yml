@@ -2,7 +2,7 @@
 - name: Include {{ redmine_sql_driver }}-specific dependencies
   include_vars: "{{ redmine_sql_driver }}.yml"
 
-# Split playbook with Ruby and Redmmine bug -
+# Split playbook with Ruby and Redmine bug -
 # https://github.com/ansible/ansible/issues/27520
 # TODO: TCP Socket with unicorn
 
@@ -10,7 +10,6 @@
   ansible.builtin.set_fact:
     default_packages_list:
       - ruby-devel
-      - ruby-dev
       - ImageMagick
       - ImageMagick-devel
       - ImageMagick-c++-devel
@@ -18,6 +17,7 @@
       - patch
       - epel-release
       - which
+      - make
 
 - name: Packages to install
   ansible.builtin.set_fact:
