@@ -1,34 +1,36 @@
 ---
-#
-# Ansible managed
-#
 dependency:
   name: galaxy
   options:
     role-file: requirements.yml
-    requirements-file: requirements.yml
+    ignore-errors: false
+driver:
+  name: docker
 lint: |
   set -e
   yamllint .
   ansible-lint
-driver:
-  name: docker
 platforms:
-  - name: "redmine-${image:-docker-centos7-ansible}-${tag:-latest}${TOX_ENVNAME}"
-    image: "${namespace:-buluma}/${image:-docker-centos7-ansible}:${tag:-latest}"
-    command: /sbin/init
-    volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
-    privileged: yes
-    pre_build_image: yes
-    tty: true
-    environment:
-      container: docker
+  - name: redmine
+    image: buluma/docker-centos7-ansible:latest
+    privileged: true
+    capabilities:
+      - SYS_ADMIN
+    volume_mounts:
+      - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
+    command: "/usr/sbin/init"
 provisioner:
   name: ansible
-  config_options:
-    defaults:
-      interpreter_python: auto_legacy_silent
-      callback_whitelist: profile_tasks
-    ssh_connection:
-      pipelining: true
+  lint:
+    name: ansible-lint
+    options:
+      x: ANSIBLE0013
+scenario:
+  name: default
+verifier:
+  name: testinfra
+  options:
+    verbose: true
+  lint:
+    name: flake8
+    enabled: false
