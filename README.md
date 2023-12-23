@@ -2,9 +2,9 @@
 
 Install Redmine on CentOS
 
-|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-redmine/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-redmine/actions/workflows/molecule.yml)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-redmine/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-redmine)|[![downloads](https://img.shields.io/ansible/role/d/4817)](https://galaxy.ansible.com/buluma/redmine)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/pulls/)|
+|GitHub|Version|Issues|Pull Requests|
+|------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-redmine/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-redmine/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -137,13 +137,13 @@ redmine_nginx_allowlist_path: ''
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | GitLab |
+| Requirement | GitHub | Version |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
-|[bngsudheer.centos_base](https://galaxy.ansible.com/buluma/bngsudheer.centos_base)|[![Build Status GitHub](https://github.com/buluma/bngsudheer.centos_base/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/bngsudheer.centos_base/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/bngsudheer.centos_base/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/bngsudheer.centos_base)|
-|[bngsudheer.ruby](https://galaxy.ansible.com/buluma/bngsudheer.ruby)|[![Build Status GitHub](https://github.com/buluma/bngsudheer.ruby/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/bngsudheer.ruby/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/bngsudheer.ruby/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/bngsudheer.ruby)|
-|[geerlingguy.mysql](https://galaxy.ansible.com/buluma/geerlingguy.mysql)|[![Build Status GitHub](https://github.com/buluma/geerlingguy.mysql/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/geerlingguy.mysql/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/geerlingguy.mysql/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/geerlingguy.mysql)|
-|[geerlingguy.postgresql](https://galaxy.ansible.com/buluma/geerlingguy.postgresql)|[![Build Status GitHub](https://github.com/buluma/geerlingguy.postgresql/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/geerlingguy.postgresql/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/geerlingguy.postgresql/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/geerlingguy.postgresql)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
+|[bngsudheer.centos_base](https://galaxy.ansible.com/buluma/bngsudheer.centos_base)|[![Build Status GitHub](https://github.com/buluma/bngsudheer.centos_base/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/bngsudheer.centos_base/actions)|[![Version](https://img.shields.io/github/release/buluma/bngsudheer.centos_base.svg)](https://github.com/shadowwalker/bngsudheer.centos_base)|
+|[bngsudheer.ruby](https://galaxy.ansible.com/buluma/bngsudheer.ruby)|[![Build Status GitHub](https://github.com/buluma/bngsudheer.ruby/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/bngsudheer.ruby/actions)|[![Version](https://img.shields.io/github/release/buluma/bngsudheer.ruby.svg)](https://github.com/shadowwalker/bngsudheer.ruby)|
+|[geerlingguy.mysql](https://galaxy.ansible.com/buluma/geerlingguy.mysql)|[![Build Status GitHub](https://github.com/buluma/geerlingguy.mysql/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/geerlingguy.mysql/actions)|[![Version](https://img.shields.io/github/release/buluma/geerlingguy.mysql.svg)](https://github.com/shadowwalker/geerlingguy.mysql)|
+|[geerlingguy.postgresql](https://galaxy.ansible.com/buluma/geerlingguy.postgresql)|[![Build Status GitHub](https://github.com/buluma/geerlingguy.postgresql/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/geerlingguy.postgresql/actions)|[![Version](https://img.shields.io/github/release/buluma/geerlingguy.postgresql.svg)](https://github.com/shadowwalker/geerlingguy.postgresql)|
 
 ## [Context](#context)
 
@@ -181,7 +181,6 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 [Michael Buluma](https://buluma.github.io/)
 
-Please consider [sponsoring me](https://github.com/sponsors/buluma).
 
 ### [Special Thanks](#special-thanks)
 
