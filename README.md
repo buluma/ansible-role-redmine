@@ -1,10 +1,10 @@
-# [Ansible role redmine](#redmine)
+# Ansible role [redmine](https://galaxy.ansible.com/ui/standalone/roles/buluma/redmine/documentation)
 
 Install Redmine on CentOS
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-redmine/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-redmine/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-redmine/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-redmine/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-redmine.svg)](https://github.com/buluma/ansible-role-redmine/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/redmine)](https://galaxy.ansible.com/ui/standalone/roles/buluma/redmine/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -175,13 +175,11 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[license (Apache-2.0)](https://github.com/buluma/ansible-role-redmine/blob/master/LICENSE).
+[license (Apache-2.0)](https://github.com/buluma/ansible-role-redmine/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
-[Michael Buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
